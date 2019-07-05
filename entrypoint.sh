@@ -12,7 +12,24 @@ sed -i "s/\$POSTGRES_USER/$POSTGRES_USER/" $PROPS_FILE
 sed -i "s/\$POSTGRES_PASSWORD/$POSTGRES_PASSWORD/" $PROPS_FILE
 
 if [ "$1" = 'start' ]; then
-  exec java -jar start.jar
+  # exec java -jar start.jar
+  
+  # exec chmod +x start-webapps.sh
+  # exec start-webapps.sh
+
+  # exec chmod +x start-database.sh
+  # exec start-database.sh
+  # exec chmod +x initialize.sh
+  # exec initialize.sh
+  # exec chmod +x start-agents.sh
+  # exec start-agents.sh
+  # exec chmod +x start-webapps.ex
+  # exec start-webapps.sh
+
+  # exec sh start-database.sh
+  # exec sh initialize.sh
+  exec sh start-agents.sh
+  exec sh start-webapps.sh
 
 elif [ "$1" = 'sleep' ]; then
   while true; do

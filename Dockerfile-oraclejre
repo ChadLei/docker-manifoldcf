@@ -22,4 +22,4 @@ COPY entrypoint.sh /manifoldcf_entrypoint.sh
 
 # ENTRYPOINT overrides default of `/bin/sh -c`
 ENTRYPOINT ["/manifoldcf_entrypoint.sh"]
-CMD ["start"]
+CMD ["start-webapps"]
